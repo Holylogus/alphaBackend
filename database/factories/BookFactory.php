@@ -17,7 +17,11 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake("Hu_hu")->sentence(3),
+            'author' => fake()->name(),
+            'price' => fake()->numberBetween(1000,5000),
+            'img' => fake()->sentence(6),
+            'category' => fake()->word(["önfejlesztő","ezotéria","üzleti"]),
         ];
     }
 }
