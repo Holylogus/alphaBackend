@@ -1,0 +1,103 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AlphaTest",
+    "dateExported": "2024-01-11T13:39:13.248Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f9e05e02-98dc-42c7-80e0-51fdc9621d08",
+            "colId": "9acb2eff-727d-4a1c-a2df-d56cd1658cf6",
+            "containerId": "",
+            "name": "AlphaGetBooks",
+            "url": "http://127.0.0.1:8000/api/books",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-11T08:53:25.486Z",
+            "modified": "2024-01-11T08:54:09.178Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "836d2605-ff3c-43cf-b2b7-abfa7b65330a",
+            "colId": "9acb2eff-727d-4a1c-a2df-d56cd1658cf6",
+            "containerId": "",
+            "name": "AlphaPostBook",
+            "url": "http://127.0.0.1:8000/api/books?title=Magyarorszég Történelme&author=Anonymus&price=3490&img=asdasdsad&category=történelmi",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-11T11:46:43.202Z",
+            "modified": "2024-01-11T11:50:27.744Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "Magyarorszég Történelme",
+                    "isPath": false
+                },
+                {
+                    "name": "author",
+                    "value": "Anonymus",
+                    "isPath": false
+                },
+                {
+                    "name": "price",
+                    "value": "3490",
+                    "isPath": false
+                },
+                {
+                    "name": "img",
+                    "value": "asdasdsad",
+                    "isPath": false
+                },
+                {
+                    "name": "category",
+                    "value": "történelmi",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ddaba3d7-1003-41b6-bc56-04b29e2c0f82",
+            "colId": "9acb2eff-727d-4a1c-a2df-d56cd1658cf6",
+            "containerId": "",
+            "name": "AlphaPutBook",
+            "url": "http://127.0.0.1:8000/api/books/1?title=Magyarorszég Történelme&author=Anonymus&price=3490&img=asdasdsad&category=történelmi",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-01-11T13:15:50.507Z",
+            "modified": "2024-01-11T13:17:52.298Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "Magyarorszég Történelme",
+                    "isPath": false
+                },
+                {
+                    "name": "author",
+                    "value": "Anonymus",
+                    "isPath": false
+                },
+                {
+                    "name": "price",
+                    "value": "3490",
+                    "isPath": false
+                },
+                {
+                    "name": "img",
+                    "value": "asdasdsad",
+                    "isPath": false
+                },
+                {
+                    "name": "category",
+                    "value": "történelmi",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
