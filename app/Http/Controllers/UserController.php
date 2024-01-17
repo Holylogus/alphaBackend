@@ -8,30 +8,30 @@ use App\Models\Users;
 class UserController extends Controller
 {
     public function index(){
-        $book = response()->json(User::all());
-        return $book;
+        $user = response()->json(User::all());
+        return $user;
     }
     public function show($id){ 
-        $book = response()->json(User::find($id));
-        return $book;
+        $user = response()->json(User::find($id));
+        return $user;
     }
 
     public function store(Request $request){
-        $book = new User();
-        $book->name=$request->name;
-        $book->email=$request->email;
-        $book->password=$request->password;
-        $book->permission=$request->permission;
-        $book->save();
+        $user = new User();
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=Hash::make($request->password);
+        $user->permission=$request->permission;
+        $user->save();
     }
     
     public function update($id,Request $request){
-        $book = User::find($id);
-        $book->name=$request->name;
-        $book->email=$request->email;
-        $book->password=$request->password;
-        $book->permission=$request->permission;
-        $book->save();  
+        $user = User::find($id);
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->permission=$request->permission;
+        $user->save();  
     }
 
     public function destroy($id){

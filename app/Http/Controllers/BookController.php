@@ -39,4 +39,8 @@ class BookController extends Controller
     public function destroy($id){
         Book::find($id)->delete();
     }
+
+    public function newView(){
+        
+    }
 }
